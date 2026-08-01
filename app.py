@@ -105,7 +105,7 @@ if all(all_api):
     tools = [search_latest_info,
              #generate image
              ])
-  leader_agent
+  #leader_agent
 else:
   st.info("Give Api-keys first to load agent")
 
@@ -130,7 +130,7 @@ if (user_input) :
 
 with tab2:
   if st.button("fetch latest news",key = "news-button"):
-    with st.spinner("running agent")
+    with st.spinner("running agent"):
       try:
         prompt = """give latest news related to given user query
         in dynamic html , output with card design format.
